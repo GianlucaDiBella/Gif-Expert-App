@@ -3,9 +3,9 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategories = []}) => {
     // , 'Spiderman', 'Buzz Lightyear', 'Rick And Morty'
-    const [categories, setCategories] = useState(['Bob Esponja'])
+    const [categories, setCategories] = useState(defaultCategories)
 
     // const handleAdd = () => {
     // //   setCategories(categories.concat('Frozono'))
